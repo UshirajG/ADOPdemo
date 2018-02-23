@@ -5,7 +5,7 @@
   <parameter name="uName" value="karan.k.kansagra@accenture.com.fsdfdev"/>
   <parameter name="password" value="salesforce1"/>
   <parameter name="dealerName" value="Honda"/>
-  <parameter name="pin" value="560037"/>
+  <parameter name="pin" value="781020"/>
   <test name="UpdateDealer">
   <classes>
   <class name="Enel.ADOPdemo.createDealerInSalesCloud"/>
