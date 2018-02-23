@@ -2,16 +2,43 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72291" started-at="2018-02-07T16:01:47Z" finished-at="2018-02-07T16:02:59Z">
+  <suite name="EnelDemoSuite" duration-ms="82588" started-at="2018-02-23T17:05:19Z" finished-at="2018-02-23T17:06:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72291" started-at="2018-02-07T16:01:47Z" finished-at="2018-02-07T16:02:59Z">
+    <test name="UpdateDealer" duration-ms="82588" started-at="2018-02-23T17:05:19Z" finished-at="2018-02-23T17:06:42Z">
       <class name="Enel.ADOPdemo.createDealerInSalesCloud">
-        <test-method status="PASS" signature="updateDealer()[pri:0, instance:Enel.ADOPdemo.createDealerInSalesCloud@5f375618]" name="updateDealer" duration-ms="72268" started-at="2018-02-07T21:31:47Z" finished-at="2018-02-07T21:32:59Z">
+        <test-method status="PASS" signature="updateDealer(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Enel.ADOPdemo.createDealerInSalesCloud@4439f31e]" name="updateDealer" duration-ms="82568" started-at="2018-02-23T22:35:19Z" finished-at="2018-02-23T22:36:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://test.salesforce.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[karan.k.kansagra@accenture.com.fsdfdev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[salesforce1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Honda]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[560037]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateDealer -->
       </class> <!-- Enel.ADOPdemo.createDealerInSalesCloud -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- UpdateDealer -->
+  </suite> <!-- EnelDemoSuite -->
 </testng-results>

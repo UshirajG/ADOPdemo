@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EnelDemoSuite]">
+  <parameter name="password" value="salesforce1"/>
+  <parameter name="dealerName" value="Honda"/>
+  <parameter name="uname" value="karan.k.kansagra@accenture.com.fsdfdev"/>
+  <parameter name="pin" value="560037"/>
+  <parameter name="uRL" value="https://test.salesforce.com"/>
+  <test name="UpdateDealer(failed)">
+    <parameter name="password" value="salesforce1"/>
+    <parameter name="dealerName" value="Honda"/>
+    <parameter name="uname" value="karan.k.kansagra@accenture.com.fsdfdev"/>
+    <parameter name="pin" value="560037"/>
+    <parameter name="uRL" value="https://test.salesforce.com"/>
+    <classes>
+      <class name="Enel.ADOPdemo.createDealerInSalesCloud">
+        <methods>
+          <include name="updateDealer"/>
+        </methods>
+      </class> <!-- Enel.ADOPdemo.createDealerInSalesCloud -->
+    </classes>
+  </test> <!-- UpdateDealer(failed) -->
+</suite> <!-- Failed suite [EnelDemoSuite] -->

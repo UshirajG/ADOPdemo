@@ -6,6 +6,7 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
+import org.testng.annotations.Parameters;
 
 
 public class createDealerInSalesCloud {
@@ -15,14 +16,17 @@ public class createDealerInSalesCloud {
 	WebDriver driver;
 	
 	
+	
+	
+	@Parameters({"uRL","uName","password","dealerName","pin"})
 	@Test
-	public  void updateDealer() throws Exception {
+	public  void updateDealer(String uRL, String userName, String passWord, String dealer, String pin) throws Exception {
 		
 		System.setProperty("webdriver.chrome.driver","resources\\chromedriver.exe");
 		driver=new ChromeDriver();
-		login("https://test.salesforce.com","karan.k.kansagra@accenture.com.fsdfdev","salesforce1");
-		searchDealer("Honda");
-		editDealer("210073");
+		login(uRL, userName,passWord);
+		searchDealer(dealer);
+		editDealer(pin);
 		
 	}
 	
@@ -76,7 +80,7 @@ public class createDealerInSalesCloud {
 	
 	public void takeSnapShot(WebDriver webdriver, String filePath) throws Exception {
 		
-		TakesScreenshot scrShot=((TakesScreenshot)webdriver);
+		TakesScreenshot scrShot=(TakesScreenshot)webdriver;
 		File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 		File DestFile=new File(filePath);
 		FileUtils.copyFile(SrcFile, DestFile);
